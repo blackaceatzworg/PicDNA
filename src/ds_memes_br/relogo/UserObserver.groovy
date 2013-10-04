@@ -1,13 +1,13 @@
 package ds_memes_br.relogo
 
-import static repast.simphony.relogo.Utility.*;
-import static repast.simphony.relogo.UtilityG.*;
-import repast.simphony.relogo.BaseObserver;
-import repast.simphony.relogo.Stop;
-import repast.simphony.relogo.Utility;
-import repast.simphony.relogo.UtilityG;
-import repast.simphony.engine.environment.RunEnvironment;
-import repast.simphony.parameter.Parameters;
+import static repast.simphony.relogo.Utility.*
+import static repast.simphony.relogo.UtilityG.*
+import repast.simphony.relogo.BaseObserver
+import repast.simphony.relogo.Stop
+import repast.simphony.relogo.Utility
+import repast.simphony.relogo.UtilityG
+import repast.simphony.engine.environment.RunEnvironment
+import repast.simphony.parameter.Parameters
 /**
 * PicDNA Simulation Observer
 * Creator: Gael Abadin
@@ -67,9 +67,9 @@ class UserObserver extends BaseObserver{
 				sum+=j
 			}
 			
-			Parameters p = RunEnvironment.getInstance().getParameters();
-			worldWidth=p.getValue("default_observer_maxPxcor")-p.getValue("default_observer_minPxcor");
-			worldHeight=p.getValue("default_observer_maxPycor")-p.getValue("default_observer_minPycor");
+			Parameters p = RunEnvironment.getInstance().getParameters()
+			worldWidth=p.getValue("default_observer_maxPxcor")-p.getValue("default_observer_minPxcor")
+			worldHeight=p.getValue("default_observer_maxPycor")-p.getValue("default_observer_minPycor")
 			leftActiveEdgeXcor = worldWidth/3
 			rightActiveEdgeXcor = 2 * worldWidth/3 - 1
 			createProtoMemes(numLeftMemes){
