@@ -1,6 +1,6 @@
 PicDNA
 ======
-### *A Relogo intelligent agent based simulation*
+### *A Relogo intelligent<sup>&#42;</sup> agent based simulation*
 
 Tries to gracefully link two randomly generated two-dimensional maps of objects with different shapes, sizes and colors.
 
@@ -24,3 +24,8 @@ Anything else you will see on this repo is pretty much a bunch of tweaks on a de
 It looks different every time! This is a snapshot after a few steps running on default settings:
 
 ![Simulation snapshot](http://i.imgur.com/0B8TEpd.png "With default (and boring) settings, it looks somehow like this.")
+
+
+<div class="reflist" style="list-style-type: decimal;">
+<sub>* Intelligent meaning independent state machines that sense and interact with the environment, changing their internal state accordingly, but without any long term memory based learning capacities (as in some sort of combination between reinforcement learning and decision tree machine learning tecniques)<sub>
+</div>
