@@ -19,33 +19,33 @@ import ds_memes_br.relogo.ProtoMeme
 import ds_memes_br.relogo.UserGlobalsAndPanelFactory
 
 public class SimBuilder implements ContextBuilder {
-	
-	public Context build(Context context) {
-	
-		if (RunEnvironment.instance.isBatch()){
+
+    public Context build(Context context) {
+
+        if (RunEnvironment.instance.isBatch()){
             UserGlobalsAndPanelFactory ugpf = new UserGlobalsAndPanelFactory()
             ugpf.initialize(new JPanel())
             ugpf.addGlobalsAndPanelComponents()
         }
-		 
-		Parameters p = RunEnvironment.getInstance().getParameters()
-		
-		// NOTE: minPxcor and minPycor must be <= 0
-		int minPxcor = p.getValue("default_observer_minPxcor")
-		int maxPxcor = p.getValue("default_observer_maxPxcor")
-		int minPycor = p.getValue("default_observer_minPycor")
-		int maxPycor = p.getValue("default_observer_maxPycor")
-		RLWorldDimensions rLWorldDimensions = new RLWorldDimensions(minPxcor, maxPxcor, minPycor, maxPycor, new repast.simphony.space.continuous.BouncyBorders())
-		
-		LinkFactory lf = new LinkFactory(UserLink)
-		TurtleFactory tf = new TurtleFactory(ProtoMeme)
-		PatchFactory pf = new PatchFactory(UserPatch)		
-		ReLogoWorldFactory wf = new ReLogoWorldFactory(context,"default_observer_context", rLWorldDimensions, tf, pf, lf)
-		
-		ObserverFactory oF = new ObserverFactory("default_observer",UserObserver,wf)
-		Observer dO = oF.createObserver()
-		
-		context.add(dO)
-		return context
-	}
+
+        Parameters p = RunEnvironment.getInstance().getParameters()
+
+        // NOTE: minPxcor and minPycor must be <= 0
+        int minPxcor = p.getValue("default_observer_minPxcor")
+        int maxPxcor = p.getValue("default_observer_maxPxcor")
+        int minPycor = p.getValue("default_observer_minPycor")
+        int maxPycor = p.getValue("default_observer_maxPycor")
+        RLWorldDimensions rLWorldDimensions = new RLWorldDimensions(minPxcor, maxPxcor, minPycor, maxPycor, new repast.simphony.space.continuous.BouncyBorders())
+
+        LinkFactory lf = new LinkFactory(UserLink)
+        TurtleFactory tf = new TurtleFactory(ProtoMeme)
+        PatchFactory pf = new PatchFactory(UserPatch)
+        ReLogoWorldFactory wf = new ReLogoWorldFactory(context,"default_observer_context", rLWorldDimensions, tf, pf, lf)
+
+        ObserverFactory oF = new ObserverFactory("default_observer",UserObserver,wf)
+        Observer dO = oF.createObserver()
+
+        context.add(dO)
+        return context
+    }
 }

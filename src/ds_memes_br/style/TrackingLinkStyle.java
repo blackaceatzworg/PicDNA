@@ -1,4 +1,5 @@
 package ds_memes_br.style;
+
 /**
  * 
  */
@@ -19,28 +20,28 @@ import repast.simphony.visualizationOGL2D.EdgeStyleOGL2D;
  */
 public class TrackingLinkStyle implements EdgeStyleOGL2D {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * repast.simphony.visualizationOGL2D.EdgeStyleOGL2D#getColor(repast.simphony
-	 * .space.graph.RepastEdge)
-	 */
-	@SuppressWarnings("unchecked")
-	public Color getColor(RepastEdge<?> edge) {
-		return ReLogoSupport.lookupColor(((TrackingEdge)edge).getColor());
-	}
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * repast.simphony.visualizationOGL2D.EdgeStyleOGL2D#getColor(repast.simphony
+     * .space.graph.RepastEdge)
+     */
+    @SuppressWarnings("unchecked")
+    public Color getColor(RepastEdge<?> edge) {
+        return ReLogoSupport.lookupColor(((TrackingEdge) edge).getColor());
+    }
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * repast.simphony.visualizationOGL2D.EdgeStyleOGL2D#getLineWidth(repast
-	 * .simphony.space.graph.RepastEdge)
-	 */
-	@SuppressWarnings("unchecked")
-	public int getLineWidth(RepastEdge<?> edge) {
-		return ((TrackingEdge)edge).getSize();
-	}
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * repast.simphony.visualizationOGL2D.EdgeStyleOGL2D#getLineWidth(repast
+     * .simphony.space.graph.RepastEdge)
+     */
+    @SuppressWarnings("unchecked")
+    public int getLineWidth(RepastEdge<?> edge) {
+        return ((TrackingEdge) edge).getSize();
+    }
 
 }

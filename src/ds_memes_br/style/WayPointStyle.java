@@ -16,76 +16,76 @@ import saf.v3d.scene.VSpatial;
 
 public class WayPointStyle implements StyleOGL2D<WayPoint> {
 
-	ShapeFactory2D factory;
-	
-	@Override
-	public void init(ShapeFactory2D factory) {
-		this.factory = factory;
+    ShapeFactory2D factory;
 
-	}
+    @Override
+    public void init(ShapeFactory2D factory) {
+        this.factory = factory;
 
-	@Override
-	public Color getBorderColor(WayPoint object) {
-		return null;
-	}
+    }
 
-	@Override
-	public int getBorderSize(WayPoint object) {
-		return 0;
-	}
+    @Override
+    public Color getBorderColor(WayPoint object) {
+        return null;
+    }
 
-	@Override
-	public Color getColor(WayPoint object) {
-		return Color.black;
-	}
+    @Override
+    public int getBorderSize(WayPoint object) {
+        return 0;
+    }
 
-	@Override
-	public float getRotation(WayPoint object) {
-		return 0;
-	}
+    @Override
+    public Color getColor(WayPoint object) {
+        return Color.black;
+    }
 
-	@Override
-	public float getScale(WayPoint object) {
-		return 0;
-	}
+    @Override
+    public float getRotation(WayPoint object) {
+        return 0;
+    }
 
-	@Override
-	public VSpatial getVSpatial(WayPoint object, VSpatial spatial) {
-		if (spatial == null) {
-			spatial = factory.createShape(
-					new Rectangle2D.Float(-0.1f / 2f, -0.1f / 2f, 0.1f, 0.1f));
-		}
-		return spatial;
-	}
+    @Override
+    public float getScale(WayPoint object) {
+        return 0;
+    }
 
-	@Override
-	public String getLabel(WayPoint object) {
-		return null;
-	}
+    @Override
+    public VSpatial getVSpatial(WayPoint object, VSpatial spatial) {
+        if (spatial == null) {
+            spatial = factory.createShape(new Rectangle2D.Float(-0.1f / 2f,
+                    -0.1f / 2f, 0.1f, 0.1f));
+        }
+        return spatial;
+    }
 
-	@Override
-	public Font getLabelFont(WayPoint object) {
-		return null;
-	}
+    @Override
+    public String getLabel(WayPoint object) {
+        return null;
+    }
 
-	@Override
-	public float getLabelXOffset(WayPoint object) {
-		return 0;
-	}
+    @Override
+    public Font getLabelFont(WayPoint object) {
+        return null;
+    }
 
-	@Override
-	public float getLabelYOffset(WayPoint object) {
-		return 0;
-	}
+    @Override
+    public float getLabelXOffset(WayPoint object) {
+        return 0;
+    }
 
-	@Override
-	public Position getLabelPosition(WayPoint object) {
-		return null;
-	}
+    @Override
+    public float getLabelYOffset(WayPoint object) {
+        return 0;
+    }
 
-	@Override
-	public Color getLabelColor(WayPoint object) {
-		return null;
-	}
+    @Override
+    public Position getLabelPosition(WayPoint object) {
+        return null;
+    }
+
+    @Override
+    public Color getLabelColor(WayPoint object) {
+        return null;
+    }
 
 }

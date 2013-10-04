@@ -6,10 +6,10 @@ import ds_memes_br.relogo.UserGlobalsAndPanelFactory;
 
 public class ReLogoPanelCreator extends AbstractReLogoPanelCreator {
 
-	public void addComponents(JPanel parent) {
-		UserGlobalsAndPanelFactory ugpf = new UserGlobalsAndPanelFactory();
-		ugpf.initialize(parent);
-		ugpf.addGlobalsAndPanelComponents();
-	}
+    public void addComponents(JPanel parent) {
+        UserGlobalsAndPanelFactory ugpf = new UserGlobalsAndPanelFactory();
+        ugpf.initialize(parent);
+        ugpf.addGlobalsAndPanelComponents();
+    }
 
 }

@@ -12,112 +12,112 @@ import saf.v3d.scene.VSpatial;
 
 public class PatchStyle implements StyleOGL2D<Patch> {
 
-	ShapeFactory2D factory;
-	
-	@Override
-	public void init(ShapeFactory2D factory) {
-		this.factory = factory;
+    ShapeFactory2D factory;
 
-	}
+    @Override
+    public void init(ShapeFactory2D factory) {
+        this.factory = factory;
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * repast.simphony.visualizationOGL2D.StyleOGL2D#getBorderColor(java.lang
-	 * .Object)
-	 */
-	public Color getBorderColor(Patch object) {
-		return null;
-	}
+    }
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * repast.simphony.visualizationOGL2D.StyleOGL2D#getBorderSize(java.lang
-	 * .Object)
-	 */
-	public int getBorderSize(Patch object) {
-		return 0;
-	}
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * repast.simphony.visualizationOGL2D.StyleOGL2D#getBorderColor(java.lang
+     * .Object)
+     */
+    public Color getBorderColor(Patch object) {
+        return null;
+    }
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * repast.simphony.visualizationOGL2D.StyleOGL2D#getColor(java.lang.Object)
-	 */
-	public Color getColor(Patch object) {
-		return ReLogoSupport.lookupColor(object.getPcolor());
-	}
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * repast.simphony.visualizationOGL2D.StyleOGL2D#getBorderSize(java.lang
+     * .Object)
+     */
+    public int getBorderSize(Patch object) {
+        return 0;
+    }
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * repast.simphony.visualizationOGL2D.StyleOGL2D#getRotation(java.lang.Object
-	 * )
-	 */
-	public float getRotation(Patch object) {
-		return 0;
-	}
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * repast.simphony.visualizationOGL2D.StyleOGL2D#getColor(java.lang.Object)
+     */
+    public Color getColor(Patch object) {
+        return ReLogoSupport.lookupColor(object.getPcolor());
+    }
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * repast.simphony.visualizationOGL2D.StyleOGL2D#getScale(java.lang.Object)
-	 */
-	public float getScale(Patch object) {
-		return 1;
-	}
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * repast.simphony.visualizationOGL2D.StyleOGL2D#getRotation(java.lang.Object
+     * )
+     */
+    public float getRotation(Patch object) {
+        return 0;
+    }
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * repast.simphony.visualizationOGL2D.StyleOGL2D#getVSpatial(java.lang.Object
-	 * , saf.v3d.scene.VSpatial)
-	 */
-	public VSpatial getVSpatial(Patch object, VSpatial spatial) {
-		if (spatial == null)
-			return factory.createRectangle(15, 15);
-		return spatial;
-	}
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * repast.simphony.visualizationOGL2D.StyleOGL2D#getScale(java.lang.Object)
+     */
+    public float getScale(Patch object) {
+        return 1;
+    }
 
-	@Override
-	public String getLabel(Patch object) {
-		Object plabel = object.getPlabel();
-		if (plabel != null && !plabel.toString().equals("")) {
-			return plabel.toString();
-		}
-		return null;
-	}
+    /*
+     * (non-Javadoc)
+     * 
+     * @see
+     * repast.simphony.visualizationOGL2D.StyleOGL2D#getVSpatial(java.lang.Object
+     * , saf.v3d.scene.VSpatial)
+     */
+    public VSpatial getVSpatial(Patch object, VSpatial spatial) {
+        if (spatial == null)
+            return factory.createRectangle(15, 15);
+        return spatial;
+    }
 
-	@Override
-	public Font getLabelFont(Patch object) {
-		return new Font("sansserif", Font.PLAIN, 12);
-	}
+    @Override
+    public String getLabel(Patch object) {
+        Object plabel = object.getPlabel();
+        if (plabel != null && !plabel.toString().equals("")) {
+            return plabel.toString();
+        }
+        return null;
+    }
 
-	@Override
-	public float getLabelXOffset(Patch object) {
-		return 0;
-	}
+    @Override
+    public Font getLabelFont(Patch object) {
+        return new Font("sansserif", Font.PLAIN, 12);
+    }
 
-	@Override
-	public float getLabelYOffset(Patch object) {
-		return 0;
-	}
+    @Override
+    public float getLabelXOffset(Patch object) {
+        return 0;
+    }
 
-	@Override
-	public Position getLabelPosition(Patch object) {
-		return Position.CENTER;
-	}
+    @Override
+    public float getLabelYOffset(Patch object) {
+        return 0;
+    }
 
-	@Override
-	public Color getLabelColor(Patch object) {
-		return ReLogoSupport.lookupColor(object.getPlabelColor());
-	}
-  
+    @Override
+    public Position getLabelPosition(Patch object) {
+        return Position.CENTER;
+    }
+
+    @Override
+    public Color getLabelColor(Patch object) {
+        return ReLogoSupport.lookupColor(object.getPlabelColor());
+    }
+
 }
