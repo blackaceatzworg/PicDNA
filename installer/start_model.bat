@@ -31,4 +31,4 @@ REM Change to the Default Repast Simphony Directory
 CD DS_memes_BR
 
 REM Start the Model
-START javaw -Xss10M -Xmx400M -cp %CP% repast.simphony.runtime.RepastMain ./DS_memes_BR.rs
+START javaw -cp %CP% repast.simphony.runtime.RepastMain ./DS_memes_BR.rs
