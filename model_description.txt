@@ -1,0 +1,8 @@
+/**
+* PicDNA Intelligent Agent Based Picture Blending Tool
+* Creator: Gael Abadin
+* Version: 0.5
+*-----------------------------------------------------------------------------
+*  Copyright (C) 2012-2013 Gael Abadin
+*-----------------------------------------------------------------------------
+*/
