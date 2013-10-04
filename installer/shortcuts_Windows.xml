@@ -4,10 +4,10 @@
 
   <skipIfNotSupported/>
   
-  <programGroup defaultName="DS_memes_BR" location="StartMenu"/>
+  <programGroup defaultName="PicDNA" location="StartMenu"/>
   
   <shortcut
-     name="DS_memes_BR"
+     name="PicDNA"
      programGroup="yes"
      desktop="no"
      applications="no"
@@ -17,7 +17,7 @@
      commandLine=""
      workingDirectory="$INSTALL_PATH"
      description="Model"
-     iconFile="$INSTALL_PATH\DS_memes_BR\icons\model.bmp"
+     iconFile="$INSTALL_PATH\PicDNA\icons\model.bmp"
      iconIndex="0"
      initialState="noShow">
      <createForPack name="Model"/>
@@ -30,7 +30,7 @@
      applications="no"
      startMenu="no"
      startup="no"
-     target="$INSTALL_PATH\DS_memes_BR\docs\index.html"
+     target="$INSTALL_PATH\PicDNA\docs\index.html"
      commandLine=""
 	 iconFile="%SystemRoot%\system32\SHELL32.dll"
      iconIndex="23" 
@@ -40,7 +40,7 @@
   </shortcut>
   
   <shortcut
-     name="DS_memes_BR Uninstaller"
+     name="PicDNA Uninstaller"
      programGroup="yes"
      desktop="no"
      applications="no"
