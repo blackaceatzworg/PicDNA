@@ -8,7 +8,7 @@ In package `ds_memes_br.relogo` you will find:
 
 * [UserGlobalsAndPanelFactory](https://github.com/elcodedocle/PicDNA/blob/master/src/ds_memes_br/relogo/UserGlobalsAndPanelFactory.groovy) sets the controls you see during the simulation.
 * [UserObserver](https://github.com/elcodedocle/PicDNA/blob/master/src/ds_memes_br/relogo/UserObserver.groovy) generates the two-dimensional maps.
-* [ProtoMeme](https://github.com/elcodedocle/PicDNA/blob/master/src/ds_memes_br/relogo/ProtoMeme.groovy) establishes the inteligent agents' behaviour.
+* [ProtoMeme](https://github.com/elcodedocle/PicDNA/blob/master/src/ds_memes_br/relogo/ProtoMeme.groovy) establishes the intelligent agents' behaviour.
 
 The rest are a bunch of tweaks on a default Relogo Framework for Repast Simphony 2 eclipse project.
 
