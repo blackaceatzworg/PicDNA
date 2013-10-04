@@ -1,7 +1,8 @@
 PicDNA
 ======
+### *Relogo inteligent agent based simulation*
 
-Relogo inteligent agent based simulation. Tries to gracefully link two randomly generated two-dimensional maps of objects with different shapes, sizes and colors.
+Tries to gracefully link two randomly generated two-dimensional maps of objects with different shapes, sizes and colors.
 
 In package ds_memes_br.relogo you will find:
 
