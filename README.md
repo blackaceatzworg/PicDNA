@@ -1,6 +1,6 @@
 PicDNA
 ======
-### *A Relogo intelligent<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span></span>&#42;<span></span></a></sup> agent based simulation*
+### *A Relogo intelligent<sup>&#42;</sup> agent based simulation*
 
 Tries to gracefully link two randomly generated two-dimensional maps of objects with different shapes, sizes and colors.
 
@@ -27,5 +27,5 @@ It looks different every time! This is a snapshot after a few steps running on d
 
 
 <div class="reflist" style="list-style-type: decimal;">
-<sub><span id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">*</a></b></span> <span class="reference-text">Intelligent meaning independent state machines that sense and interact with the environment, changing their internal state accordingly, but without any long term memory based learning capacities (as in some sort of combination between reinforcement learning and decision tree machine learning tecniques)</span></span><sub>
+<sub>* Intelligent meaning independent state machines that sense and interact with the environment, changing their internal state accordingly, but without any long term memory based learning capacities (as in some sort of combination between reinforcement learning and decision tree machine learning tecniques)<sub>
 </div>
