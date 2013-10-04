@@ -1,5 +1,5 @@
-PicDNA
-======
+PicDNA v0.6
+===========
 ### *A Relogo intelligent<sup>&#42;</sup> agent based simulation*
 
 Tries to gracefully link two randomly generated two-dimensional maps of objects with different shapes, sizes and colors.
@@ -15,9 +15,9 @@ Anything else you will see on this repo is pretty much a bunch of tweaks on a de
 ## How to use
 
 * Clone the repo: `git clone https://github.com/elcodedocle/PicDNA`
-* Import the project and run it from eclipse indigo included on [Repast Simphony 2.0](http://sourceforge.net/projects/repast/files/Repast%20Simphony/Repast%20Simphony%202.0/).
+* Import the project and run it from eclipse indigo included on [Repast Simphony 2.1](http://sourceforge.net/projects/repast/files/Repast%20Simphony/Repast%20Simphony%202.1/).
 
-(In case you have any trouble, the simulation runs nice on [Java SE 6 U31](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html))
+(Versions up to v0.5 run nice on [Repast Simphony 2.0](http://sourceforge.net/projects/repast/files/Repast%20Simphony/Repast%20Simphony%202.0/) using [Java SE 6 U31](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html))
 
 ## How it looks
 
