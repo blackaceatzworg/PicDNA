@@ -4,11 +4,11 @@ PicDNA v0.6
 
 Tries to gracefully link two randomly generated two-dimensional maps of objects with different shapes, sizes and colors.
 
-In package `ds_memes_br.relogo` you will find:
+In package `picdna.relogo` you will find:
 
-* [UserGlobalsAndPanelFactory](https://github.com/elcodedocle/PicDNA/blob/master/src/ds_memes_br/relogo/UserGlobalsAndPanelFactory.groovy) sets the controls you see during the simulation.
-* [UserObserver](https://github.com/elcodedocle/PicDNA/blob/master/src/ds_memes_br/relogo/UserObserver.groovy) generates the two-dimensional maps.
-* [ProtoMeme](https://github.com/elcodedocle/PicDNA/blob/master/src/ds_memes_br/relogo/ProtoMeme.groovy) establishes the intelligent agents' behaviour.
+* [UserGlobalsAndPanelFactory](https://github.com/elcodedocle/PicDNA/blob/master/src/picdna/relogo/UserGlobalsAndPanelFactory.groovy) sets the controls you see during the simulation.
+* [UserObserver](https://github.com/elcodedocle/PicDNA/blob/master/src/picdna/relogo/UserObserver.groovy) generates the two-dimensional maps.
+* [ProtoMeme](https://github.com/elcodedocle/PicDNA/blob/master/src/picdna/relogo/ProtoMeme.groovy) establishes the intelligent agents' behaviour.
 
 Anything else you will see on this repo is pretty much a bunch of tweaks on a default Relogo Framework for Repast Simphony 2 eclipse project.
 
