@@ -23,7 +23,7 @@ OR
 * Run the jar file: `java -jar PicDNA-v0.6-setup.jar`
 * Run `start_model.bat` (windows) or `start_model.command` (linux) from selected install dir
 
-(Versions up to v0.5 run nice on [Repast Simphony 2.0](http://sourceforge.net/projects/repast/files/Repast%20Simphony/Repast%20Simphony%202.0/) using [Java SE 6 U31](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html))
+(If installer hangs on 5th or 6th step just close it, the program will be installed anyway. Versions up to v0.5 run nice on [Repast Simphony 2.0](http://sourceforge.net/projects/repast/files/Repast%20Simphony/Repast%20Simphony%202.0/) using [Java SE 6 U31](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html))
 
 ## How it looks
 
