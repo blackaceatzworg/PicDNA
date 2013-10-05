@@ -15,7 +15,13 @@ Anything else you will see on this repo is pretty much a bunch of tweaks on a de
 ## How to use
 
 * Clone the repo: `git clone https://github.com/elcodedocle/PicDNA`
-* Import the project and run it from eclipse indigo included on [Repast Simphony 2.1](http://sourceforge.net/projects/repast/files/Repast%20Simphony/Repast%20Simphony%202.1/).
+* Import the project and run it from eclipse kepler included on [Repast Simphony 2.1](http://sourceforge.net/projects/repast/files/Repast%20Simphony/Repast%20Simphony%202.1/).
+
+OR
+
+* Download the binary installer from https://github.com/elcodedocle/PicDNA/releases
+* Run the jar file: `java -jar PicDNA-v0.6-setup.jar`
+* Run `start_model.bat` (windows) or `start_model.command` (linux) from selected install dir
 
 (Versions up to v0.5 run nice on [Repast Simphony 2.0](http://sourceforge.net/projects/repast/files/Repast%20Simphony/Repast%20Simphony%202.0/) using [Java SE 6 U31](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html))
 
