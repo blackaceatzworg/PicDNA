@@ -6,16 +6,16 @@ Tries to gracefully link two randomly generated two-dimensional maps of objects 
 
 In package `picdna.relogo` you will find:
 
-* [UserGlobalsAndPanelFactory](https://github.com/elcodedocle/PicDNA/blob/master/src/picdna/relogo/UserGlobalsAndPanelFactory.groovy) sets the controls you see during the simulation.
-* [UserObserver](https://github.com/elcodedocle/PicDNA/blob/master/src/picdna/relogo/UserObserver.groovy) generates the two-dimensional maps.
-* [ProtoMeme](https://github.com/elcodedocle/PicDNA/blob/master/src/picdna/relogo/ProtoMeme.groovy) establishes the intelligent agents' behavior.
+* [UserGlobalsAndPanelFactory](https://github.com/elcodedocle/PicDNA/blob/master/src/picdna/relogo/UserGlobalsAndPanelFactory.groovy) sets the controls you see during the simulation
+* [UserObserver](https://github.com/elcodedocle/PicDNA/blob/master/src/picdna/relogo/UserObserver.groovy) generates the two-dimensional maps
+* [ProtoMeme](https://github.com/elcodedocle/PicDNA/blob/master/src/picdna/relogo/ProtoMeme.groovy) establishes the intelligent agents' behavior
 
 Anything else you will see on this repo is pretty much a bunch of tweaks on a default Relogo Framework for Repast Simphony 2 eclipse project.
 
 ## How to use
 
 * Clone the repo: `git clone https://github.com/elcodedocle/PicDNA`
-* Import the project and run it from eclipse kepler included on [Repast Simphony 2.1](http://sourceforge.net/projects/repast/files/Repast%20Simphony/Repast%20Simphony%202.1/).
+* Import the project and run it from eclipse kepler included on [Repast Simphony 2.1](http://sourceforge.net/projects/repast/files/Repast%20Simphony/Repast%20Simphony%202.1/)
 
 OR
 
@@ -52,7 +52,7 @@ Then, on each step:
 
 Only one extra feature was later added to this approach:
 
-* Apart from their position, active (dynamic) agents can change their other properties (color/shape/size) on each step to better fit their environment according to the previously defined rules.
+* Apart from their position, active (dynamic) agents can change their other properties (color/shape/size) on each step to better fit their environment according to the previously defined rules
 
 ## TODO
 
