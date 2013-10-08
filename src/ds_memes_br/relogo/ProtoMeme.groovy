@@ -156,7 +156,6 @@ class ProtoMeme extends BaseTurtle {
             label = ""
             if ((protoMemesCount>populationLimit)&&(randomFloat(1)<1-populationLimit/protoMemesCount)||mysteps>mylifespan) {
                 die()
-                protoMemesCount--
             }
         }
     }
