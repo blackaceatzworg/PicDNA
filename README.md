@@ -45,8 +45,8 @@ After this, the simulation runs by pressing `>` play button (`Go` button before 
 
 Then, on each step:
 
-* Generate a random number of dynamic (can move along the middle area, have a random lifespan) agents at random positions with random color/shape/size on the middle area.
-* Passive hidden agents on middle area act as attractors/repellers of dynamic agents with similar/different properties (size/color/shape).
+* Generate a random number of dynamic (can move along the middle area, have a random lifespan) agents at random positions with random color/shape/size on the middle area
+* Passive hidden agents on middle area act as attractors/repellers of dynamic agents with similar/different properties (size/color/shape)
 * Passive, not hidden, agents on left and right areas and active (dynamic) agents on middle area act as repellers/attractors of dynamic agents with similar/different properties (like magnets, just the opposite from above)
 * Active agents who have reached their (random) step lifespan die
 
