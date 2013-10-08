@@ -54,11 +54,11 @@ Only one extra feature was later added to this approach:
 
 * Apart from their position, active (dynamic) agents can change their other properties (color/shape/size) on each step to better fit their environment according to the previously defined rules
 
+Also, many controls were added to allow runtime modification of the weights, randomness and random distributions of the behavior-defining heuristics associated with each property of the agents (color/shape/size/position).
+
 ## TODO
 
 * Use simpler and more visually recognizable patterns in left and right Maps generation<sup>**</sup>
-
-Also, many controls were added to allow runtime modification of the weights, randomness and random distributions of the behavior-defining heuristics associated with each property of the agents (color/shape/size/position).
 
 <p><sub>* <i>Intelligent</i> meaning independent state machines that sense and interact with the environment, changing their internal state accordingly, but without any long term memory based learning capacities (as in some sort of combination between reinforcement learning and decision tree machine learning techniques)</sub>
 <br><sub>** Rather than just taking samples from common probability distributions, in order to easily appreciate how the agents combine both maps' properties generating an original brand new pattern which, under these conditions, should also be easily recognizable when looking at the simulation output.</sub></p>
