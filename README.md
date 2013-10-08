@@ -29,9 +29,11 @@ OR
 
 It looks different every time! This is a snapshot after a few steps running on default settings:
 
-![Simulation snapshot](http://i.imgur.com/0B8TEpd.png "With default (and boring) settings, it looks somehow like this.")
+![Simulation snapshot](http://i.imgur.com/TX31zGx.png "With default (and boring) settings, it looks somehow like this.")
 
+## TODO
 
-<div class="reflist" style="list-style-type: decimal;">
-<sub>* Intelligent meaning independent state machines that sense and interact with the environment, changing their internal state accordingly, but without any long term memory based learning capacities (as in some sort of combination between reinforcement learning and decision tree machine learning tecniques)<sub>
-</div>
+* Generate the two maps using easier visually recognizable patterns<sup>**</sup>
+
+<p><sub>* Intelligent meaning independent state machines that sense and interact with the environment, changing their internal state accordingly, but without any long term memory based learning capacities (as in some sort of combination between reinforcement learning and decision tree machine learning tecniques)</sub>
+<br><sub>** Rather than just taking samples from common probability distributions, in order to easily appreciate how the agents combine both maps' properties generating an original brand new pattern which, under these conditions, should also be easily recognizable when looking at the simulation output.</sub></p>
