@@ -158,7 +158,6 @@ class ProtoMeme extends ReLogoTurtle{
 			label = ""
 			if ((protoMemesCount>populationLimit)&&(randomFloat(1)<1-populationLimit/protoMemesCount)||mysteps>mylifespan) {
 				die()
-				protoMemesCount--
 			}
 		}
 	}
