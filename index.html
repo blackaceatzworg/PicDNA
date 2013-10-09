@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>PicDNA by elcodedocle</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>PicDNA</h1>
+        <h2>A Relogo intelligent agent based simulation. Tries to gracefully link two randomly generated two-dimensional maps of objects with different shapes, sizes and colors.</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/elcodedocle/PicDNA/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/elcodedocle/PicDNA/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/elcodedocle/PicDNA" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="picdna-v062" class="anchor" href="#picdna-v062"><span class="octicon octicon-link"></span></a>PicDNA v0.6.2</h1>
+
+<h3>
+<a name="a-relogo-intelligent-agent-based-simulation" class="anchor" href="#a-relogo-intelligent-agent-based-simulation"><span class="octicon octicon-link"></span></a><em>A Relogo intelligent<sup>*</sup> agent based simulation</em>
+</h3>
+
+<p>Tries to gracefully link two randomly generated two-dimensional maps of objects with different shapes, sizes and colors.</p>
+
+<p>In package <code>picdna.relogo</code> you will find:</p>
+
+<ul>
+<li>
+<a href="https://github.com/elcodedocle/PicDNA/blob/master/src/picdna/relogo/UserGlobalsAndPanelFactory.groovy">UserGlobalsAndPanelFactory</a> sets the controls you see during the simulation</li>
+<li>
+<a href="https://github.com/elcodedocle/PicDNA/blob/master/src/picdna/relogo/UserObserver.groovy">UserObserver</a> generates the two-dimensional maps</li>
+<li>
+<a href="https://github.com/elcodedocle/PicDNA/blob/master/src/picdna/relogo/ProtoMeme.groovy">ProtoMeme</a> establishes the intelligent agents' behavior</li>
+</ul><p>Anything else you will see on this repo is pretty much a bunch of tweaks on a default Relogo Framework for Repast Simphony 2.1 eclipse project.</p>
+
+<h2>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use</h2>
+
+<ul>
+<li>Clone the repo: <code>git clone https://github.com/elcodedocle/PicDNA</code>
+</li>
+<li>Import the project and run it from eclipse kepler included on <a href="http://sourceforge.net/projects/repast/files/Repast%20Simphony/Repast%20Simphony%202.1/">Repast Simphony 2.1</a>
+</li>
+</ul><p>OR</p>
+
+<ul>
+<li>Download the binary installer from <a href="https://github.com/elcodedocle/PicDNA/releases">https://github.com/elcodedocle/PicDNA/releases</a>
+</li>
+<li>Run the jar file: <code>java -jar PicDNA-v0.6.2-setup.jar</code>
+</li>
+<li>Run <code>start_model.bat</code> (windows) or <code>start_model.command</code> (linux) from selected install dir</li>
+</ul><p>(If installer hangs on 5th or 6th step just close it, the program will be installed anyway. Versions up to v0.5 run nice on <a href="http://sourceforge.net/projects/repast/files/Repast%20Simphony/Repast%20Simphony%202.0/">Repast Simphony 2.0</a> using <a href="http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html">Java SE 6 U31</a>)</p>
+
+<h2>
+<a name="how-it-looks" class="anchor" href="#how-it-looks"><span class="octicon octicon-link"></span></a>How it looks</h2>
+
+<p>It looks different every time! This is a snapshot after a few steps running on default settings:</p>
+
+<p><img src="http://i.imgur.com/TX31zGx.png" alt="Simulation snapshot" title="With default (and boring) settings, it looks somehow like this."></p>
+
+<h2>
+<a name="how-it-works" class="anchor" href="#how-it-works"><span class="octicon octicon-link"></span></a>How it works</h2>
+
+<p>The first approach was:</p>
+
+<p>Pressing power (+<code>Setup</code> button before v0.6) button does the following setup:</p>
+
+<ul>
+<li>Divide the whole 2D-world area horizontally into three parts of equal size</li>
+<li>Generate two static random maps, one on the left side and one on the right side, represented by locked (passive, never change their position, shape, color or size) visible agents</li>
+<li>Make a hidden superposition of both maps in the middle area (by cloning left and right agents on their relative positions and setting their visibility to hidden)</li>
+</ul><p>After this, the simulation runs by pressing <code>&gt;</code> play button (<code>Go</code> button before v0.6) for continuous playback or <code>&gt;&gt;</code> button (<code>Step</code> button before v0.6) for one-step playback.</p>
+
+<p>Then, on each step:</p>
+
+<ul>
+<li>Generate a random number of dynamic (can move along the middle area, have a random lifespan) agents at random positions with random color/shape/size on the middle area</li>
+<li>Passive hidden agents on middle area act as attractors/repellers of dynamic agents with similar/different properties (size/color/shape)</li>
+<li>Passive, not hidden, agents on left and right areas and active (dynamic) agents on middle area act as repellers/attractors of dynamic agents with similar/different properties (like magnets, just the opposite from above)</li>
+<li>Active agents who have reached their (random) step lifespan die</li>
+</ul><p>Only one extra feature was later added to this approach:</p>
+
+<ul>
+<li>Apart from their position, active (dynamic) agents can change their other properties (color/shape/size) on each step to better fit their environment according to the previously defined rules</li>
+</ul><p>Also, many controls were added to allow runtime modification of the weights, randomness and random distributions of the behavior-defining heuristics associated with each property of the agents (color/shape/size/position).</p>
+
+<h2>
+<a name="todo" class="anchor" href="#todo"><span class="octicon octicon-link"></span></a>TODO</h2>
+
+<ul>
+<li>Use simpler and more visually recognizable patterns in left and right Maps generation<sup>**</sup>
+</li>
+<li>Dynamic lifespan (when a dynamic agent is in a good/bad environment its lifespan increases/decreases)</li>
+</ul><p><sub>* <i>Intelligent</i> meaning independent state machines that sense and interact with the environment, changing their internal state accordingly, but without any long term memory based learning capacities (as in some sort of combination between reinforcement learning and decision tree machine learning techniques)</sub><br><sub>** Rather than just taking samples from common probability distributions, in order to easily appreciate how the agents combine both maps' properties generating an original brand new pattern which, under these conditions, should also be easily recognizable when looking at the simulation output.</sub></p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
