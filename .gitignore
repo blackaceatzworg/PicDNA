@@ -52,3 +52,34 @@ output/
 src-gen/
 *.log
 
+
+###############################
+# Repast Simphony 2.1 Defaults
+###############################
+batch/
+docs/
+freezedried_data/
+icons/
+installer/
+integration/
+launchers/
+lib/
+misc/
+PicDNA.rs/styles/
+PicDNA.rs/context.xml
+PicDNA.rs/default_frame_layout.xml
+PicDNA.rs/repast.simphony.action.display_relogoDefault.xml
+PicDNA.rs/repast.simphony.dataLoader.engine.ClassNameDataLoaderAction_0.xml
+PicDNA.rs/repast.simphony.userpanel.ui.DefaultUserPanelDescriptorAction_1.xml
+PicDNA.rs/scenario.xml
+PicDNA.rs/user_path.xml
+src/picdna/context
+src/picdna/factories
+src/picdna/relogo/UserLink.groovy
+src/picdna/relogo/UserPatch.groovy
+src/picdna/style
+repast-licenses/
+shapes/
+transferFiles/
+MessageCenter.log4j.properties
+Repast.settings
