@@ -1,6 +1,6 @@
 PicDNA v0.6.2
 =============
-### *A Relogo intelligent<sup>&#42;</sup> agent based simulation*
+### *A ReLogo intelligent<sup>&#42;</sup> agent based simulation*
 
 Tries to gracefully link two randomly generated two-dimensional maps of objects with different shapes, sizes and colors.
 
