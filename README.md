@@ -17,7 +17,7 @@ Anything else you will see on this repo is pretty much a bunch of tweaks on a de
 * Install [Repast Simphony 2.1](http://sourceforge.net/projects/repast/files/Repast%20Simphony/Repast%20Simphony%202.1/)
 * Clone the repo on Repast Simphony 2.1 bundled Eclipse workspace: `git clone https://github.com/elcodedocle/PicDNA`
 * Create a new ReLogo project on Repast Simphony 2.1 bundled Eclipse named `PicDNA` (`File->new->ReLogo Project`)
-* Run the simulation from Eclipse (`CTRL+F11`)
+* Run the simulation from Eclipse (`CTRL+F11` runs the last selected profile)
 
 OR
 
