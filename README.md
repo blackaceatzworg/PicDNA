@@ -10,7 +10,7 @@ In package `picdna.relogo` you will find:
 * [UserObserver](https://github.com/elcodedocle/PicDNA/blob/master/src/picdna/relogo/UserObserver.groovy) generates the two-dimensional maps
 * [ProtoMeme](https://github.com/elcodedocle/PicDNA/blob/master/src/picdna/relogo/ProtoMeme.groovy) establishes the intelligent agents' behavior
 
-Anything else you will see on this repo is pretty much a bunch of tweaks on a default Relogo Framework for Repast Simphony 2.1 eclipse project.
+Anything else you will see on this repo is pretty much a bunch of tweaks on a default Relogo Framework for Repast Simphony 2.1 Eclipse project.
 
 ## How to use
 
