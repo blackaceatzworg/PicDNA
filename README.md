@@ -4,7 +4,7 @@ PicDNA v0.5.2
 
 Tries to gracefully link two randomly generated two-dimensional maps of objects with different shapes, sizes and colors.
 
-In package `picdna.relogo` you will find:
+In package `ds_memes_br.relogo` you will find:
 
 * [UserGlobalsAndPanelFactory](https://github.com/elcodedocle/PicDNA/blob/v0.5/src/ds_memes_br/relogo/UserGlobalsAndPanelFactory.groovy) sets the controls you see during the simulation
 * [UserObserver](https://github.com/elcodedocle/PicDNA/blob/v0.5/src/ds_memes_br/relogo/UserObserver.groovy) generates the two-dimensional maps
